@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "evidence_type": "amazon_bedrock_apply_guardrail_validation",
+  "test_id": "AWS-API-01",
+  "execution_date": "2026-09-15",
+  "region": "us-east-1",
+  "guardrail_name": "lindenarc-signal-boundary-v1",
+  "guardrail_version": "1",
+  "source": "INPUT",
+  "foundation_model_invoked": false,
+  "data_classification": "synthetic",
+  "action": "GUARDRAIL_INTERVENED",
+  "action_reason": "Guardrail masked.",
+  "sanitized_output": "Subject: Unable to view reimbursement status. I cannot see the reimbursement status for account {LindenArcAccountReference}. Please call me at {PHONE} when there is an update.",
+  "detections": {
+    "phone": {
+      "type": "PHONE",
+      "action": "ANONYMIZED",
+      "detected": true,
+      "original_match_retained": false
+    },
+    "account_reference": {
+      "name": "LindenArcAccountReference",
+      "action": "ANONYMIZED",
+      "detected": true,
+      "original_match_retained": false
+    },
+    "prompt_attack": {
+      "type": "PROMPT_ATTACK",
+      "confidence": "NONE",
+      "filter_strength": "HIGH",
+      "action": "NONE",
+      "detected": false
+    }
+  },
+  "coverage": {
+    "guarded_text_characters": 171,
+    "total_text_characters": 171
+  },
+  "processing_latency_ms": 372,
+  "usage": {
+    "content_policy_units": 1,
+    "sensitive_information_policy_units": 1,
+    "sensitive_information_policy_free_units": 1
+  },
+  "sanitization": {
+    "aws_account_id_removed": true,
+    "guardrail_id_removed": true,
+    "guardrail_arn_removed": true,
+    "original_detected_values_removed": true
+  }
+}

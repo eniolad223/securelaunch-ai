@@ -1,0 +1,72 @@
+[
+  {
+    "playbook_id": "PB-REC-001",
+    "version": "1.0",
+    "title": "Receipt upload troubleshooting",
+    "category": "receipt_upload_error",
+    "approved_steps": [
+      "Confirm that the file uses an approved format.",
+      "Confirm that the file is within the documented size limit.",
+      "Ask the customer to retry using the supported upload workflow.",
+      "Escalate if the approved steps do not resolve the issue."
+    ],
+    "owner": "LindenArc Support Operations",
+    "review_date": "2026-09-01"
+  },
+  {
+    "playbook_id": "PB-INV-002",
+    "version": "1.0",
+    "title": "Possible duplicate invoice review",
+    "category": "duplicate_invoice",
+    "approved_steps": [
+      "Compare the invoice reference, supplier, amount, and date using authorized records.",
+      "Check whether an existing duplicate warning was acknowledged.",
+      "Do not change or release a payment from Signal.",
+      "Escalate discrepancies to an authorized accounts-payable reviewer."
+    ],
+    "owner": "LindenArc Support Operations",
+    "review_date": "2026-09-01"
+  },
+  {
+    "playbook_id": "PB-APR-003",
+    "version": "1.0",
+    "title": "Approval workflow troubleshooting",
+    "category": "approval_workflow",
+    "approved_steps": [
+      "Confirm the documented approval path for the tenant without changing it.",
+      "Check whether the expected approver has an active authorized role.",
+      "Review the workflow status and timestamps available to the support role.",
+      "Escalate policy or permission changes to the authorized administrator."
+    ],
+    "owner": "LindenArc Support Operations",
+    "review_date": "2026-09-01"
+  },
+  {
+    "playbook_id": "PB-ACC-004",
+    "version": "1.0",
+    "title": "Account access troubleshooting",
+    "category": "account_access",
+    "approved_steps": [
+      "Use the approved identity-verification process before discussing account access.",
+      "Confirm that the user is assigned to the correct tenant and authorized role.",
+      "Do not request a password, authentication code, or recovery secret.",
+      "Escalate suspected compromise through the security process."
+    ],
+    "owner": "LindenArc Support Operations",
+    "review_date": "2026-09-01"
+  },
+  {
+    "playbook_id": "PB-INT-005",
+    "version": "1.0",
+    "title": "Integration synchronization troubleshooting",
+    "category": "integration_sync",
+    "approved_steps": [
+      "Confirm the affected integration and the time of the last successful synchronization.",
+      "Check the approved integration-health indicators available to support.",
+      "Do not request or expose API keys or other credentials.",
+      "Escalate persistent failures to the integration support owner."
+    ],
+    "owner": "LindenArc Support Operations",
+    "review_date": "2026-09-01"
+  }
+]
