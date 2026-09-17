@@ -2,6 +2,8 @@
 
 **AI security case study · Python control gateway · Amazon Bedrock Guardrails**
 
+**[Launch the interactive SecureLaunch AI case study](https://eniola-securelaunch-ai.streamlit.app/)**
+
 ![A support ticket moving through a protected security boundary before reaching an external AI provider](assets/security-boundary-hero.png)
 
 SecureLaunch AI is a hands-on security case study showing how an organization can reduce sensitive-data exposure **before** a support ticket is sent to an external AI provider. I translated security policy into a working Python gateway, tested it with 43 automated checks, and independently configured Amazon Bedrock Guardrails to validate the same boundary on a real cloud security service.
@@ -80,6 +82,9 @@ Read the complete [Amazon Bedrock Guardrail validation report](evidence/aws/AWS_
 ## Explore the project
 
 ### Interactive reviewer experience
+
+**[Open the live reviewer experience](https://eniola-securelaunch-ai.streamlit.app/)**
+
 
 The Streamlit interface presents the business context, working gateway, AWS evidence, risk decisions, framework relevance, and my reasoning in a guided format. To run it locally:
 
